@@ -1,8 +1,8 @@
 import style from './ContactList.module.css'
 import Contact from '../Contact/Contact'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectError, selectFilteredContacts, selectLoading } from '../../redux/contactsSlice'
-import { deleteContact, fetchContacts } from '../../redux/contactsOps'
+import { selectError, selectFilteredContacts, selectLoading } from '../../redux/contacts/selectors'
+import { deleteContact, fetchContacts } from '../../redux/contacts/operations'
 import { useEffect } from 'react'
 
 

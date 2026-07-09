@@ -1,11 +1,11 @@
 import style from './HomePage.module.css'
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <>
       <title>Welcome</title>
-      <div style={styles.container}>
-        <h1 style={styles.title}>
+      <div className={style.container}>
+        <h1 className={style.title}>
           Task manager welcome page{' '}
           <span role="img" aria-label="Greeting icon">
             💁‍♀️
@@ -15,3 +15,5 @@ export default function HomePage() {
     </>
   );
 }
+
+export default HomePage

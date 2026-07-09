@@ -34,7 +34,7 @@ function App() {
             element={
               <RestrictedRoute 
                 redirectTo='/contacts'
-                componen={<RegistrationPage />}
+                component={<RegistrationPage />}
               />
             } />
           <Route 
@@ -42,7 +42,7 @@ function App() {
             element={
               <RestrictedRoute 
                 redirectTo='/contacts'
-                componen={<LoginPage />}
+                component={<LoginPage />}
               />
             } />
           <Route 
@@ -50,7 +50,7 @@ function App() {
             element={
               <PrivateRoute 
                 redirectTo='/login'
-                componen={<ContactsPage />}
+                component={<ContactsPage />}
               />
             } />
         </Routes>

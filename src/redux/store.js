@@ -23,19 +23,16 @@ const storage = {
 
 const persistConfig = {
     key: 'root',
-    storage
+    storage,
+    whitelist: ['token'] // Saved token only
 }
 
-const rootReducer = combineReducers({
-    contacts: contactsSlice,
-    filters: filtersSlice,
-    auth: authSlice
-})
-
-const persistedReducer = persistReducer(persistConfig, rootReducer)
-
 export const store = configureStore({
-    reducer: rootReducer,
+    reducer: {
+        contacts: contactsSlice,
+        filters: filtersSlice,
+        auth: persistReducer(persistConfig, authSlice)
+    },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
         serializableCheck: {
             ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]

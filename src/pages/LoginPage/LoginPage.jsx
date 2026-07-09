@@ -1,6 +1,6 @@
 import { LoginForm } from "../../components/LoginForm/LoginForm";
 
-export const LoginPage = () => {
+const LoginPage = () => {
     return (
         <>
         <title>Log In</title>
@@ -8,3 +8,5 @@ export const LoginPage = () => {
         </>
     )
 }
+
+export default LoginPage

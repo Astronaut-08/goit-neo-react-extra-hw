@@ -1,7 +1,7 @@
 import style from './SearchBox.module.css'
 import {Formik, Form, Field} from 'formik'
 import { useDispatch } from 'react-redux';
-import { changeFilter } from '../../redux/filtersSlice';
+import { changeFilter } from '../../redux/filters/slice';
 
 // використаємо для скидання значення фільтра при оновленні сторінки
 import { useEffect } from 'react'; 

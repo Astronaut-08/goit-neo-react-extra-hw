@@ -2,7 +2,7 @@ import style from './ContactForm.module.css'
 import {Formik, Form, Field, ErrorMessage} from 'formik'
 import * as Yup from 'yup'
 import { useDispatch } from 'react-redux'
-import { addContact } from '../../redux/contactsOps'
+import { addContact } from '../../redux/contacts/operations'
 
 const Validation = Yup.object().shape({
     name: Yup.string().required('Required').min(3, 'To short').max(50, 'To long'),
