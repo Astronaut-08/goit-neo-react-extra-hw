@@ -1,12 +1,14 @@
 // файл створення стору
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import contactsSlice from './contactsSlice'
-import filtersSlice from './filtersSlice'
+import contactsSlice from './contacts/slice'
+import filtersSlice from './filters/slice'
+import authSlice from './auth/slice'
 
 
 const rootReducer = combineReducers({
     contacts: contactsSlice,
-    filters: filtersSlice
+    filters: filtersSlice,
+    auth: authSlice
 })
 
 export const store = configureStore({
