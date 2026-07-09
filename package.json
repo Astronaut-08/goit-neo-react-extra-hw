@@ -16,7 +16,9 @@
     "nanoid": "^5.1.16",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-formik": "^0.1.5",
     "react-redux": "^9.3.0",
+    "react-router-dom": "^7.18.1",
     "redux-persist": "^6.0.0",
     "yup": "^1.7.1"
   },
