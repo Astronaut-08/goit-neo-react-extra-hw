@@ -1,0 +1,95 @@
+/* Контейнер списку (li) */
+.contact-item {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  align-items: center;
+  row-gap: 12px; 
+  
+  border: 2px solid #000000;
+  border-radius: 12px;
+  padding: 18px 24px;
+  max-width: 550px;
+  background-color: #ffffff;
+  list-style: none;
+  box-sizing: border-box;
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Рядок з ім'ям */
+.contact-name {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  font-size: 26px;
+  color: #000000;
+  line-height: 1;
+  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Додаємо іконку користувача через CSS */
+.contact-name::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+/* Рядок з телефоном */
+.contact-number {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  font-size: 26px;
+  color: #000000;
+  line-height: 1;
+  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Додаємо іконку слухавки через CSS */
+.contact-number::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1A11.36 11.36 0 0 0 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+/* Кнопка Delete */
+.delete-btn {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  
+  background-color: #f2f2f2;
+  color: #000000;
+  font-size: 24px;
+  border: 1.5px solid #8e8e93;
+  border-radius: 6px;
+  padding: 10px 22px;
+  
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Інтерактивність кнопки */
+.delete-btn:hover {
+  background-color: #e5e5ea;
+  border-color: #636366;
+}
+
+.delete-btn:active {
+  background-color: #d1d1d6;
+}

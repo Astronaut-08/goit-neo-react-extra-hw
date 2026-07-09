@@ -1,0 +1,80 @@
+/* Контейнер-обгортка (за бажанням, для обмеження ширини форми) */
+.formContainer {
+  max-width: 380px;
+  margin-bottom: 20px;
+}
+
+/* Сама форма (рамка навколо всього блоку як на скріншоті) */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid #4a4a4a;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Блок, що об'єднує Label + Input + Error */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+/* Підписи полів (Name, Number) */
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* Текстові інпути */
+.input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 18px;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease-in-out;
+}
+
+/* Ефект фокусу при кліку на інпут */
+.input:focus {
+  border: 2px solid #0056b3;
+  padding: 5px 9px;
+}
+
+/* Червоний текст помилки (Required / To short) */
+.error {
+  font-size: 14px;
+  color: #c62828;
+  margin-top: 2px;
+}
+
+/* Кнопка "Add contact" */
+.button {
+  align-self: center;
+  padding: 4px 14px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #e8e8e8;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background-color 0.1s ease;
+}
+
+/* Легкий інтерактив для кнопки */
+.button:hover {
+  background-color: #dfdfdf;
+}
+
+.button:active {
+  background-color: #cfcfcf;
+}
